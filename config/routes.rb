@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   get("/paper", { :controller => "game", :action => "paper" })
 
   get("/scissors", { :controller => "game", :action => "scissors" })
+
+  get("/", { :controller => "game", :action => "home"})
+
 end
  
 

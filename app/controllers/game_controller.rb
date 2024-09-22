@@ -13,4 +13,8 @@ class GameController < ApplicationController ## controller -- ruby looks for fil
     @random_move = ["rock", "paper", "scissors"].sample
     render ({ :template => "game_templates/play_scissors" })
   end 
+
+  def home
+    render ({ :template => "game_templates/home" })
+  end 
 end
